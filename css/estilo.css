@@ -1,20 +1,35 @@
-/* Selectores básicos */
-
-body {
-    font-family: "TyponineSans Regular 18";
+#cabecera {
+   background-color: #001c43;
+   box-sizing: border-box;
+   margin: 0px;
 }
 
-h1 {
+body {
+    background: url("https://ugc.kn3.net/i/origin/http://d2f8dzk2mhcqts.cloudfront.net/0422_Create_a_Dark_and_Surreal_Poster_Using_Your_Own_Portrait/01.jpg");
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1.0625rem;
+}
+
+h1{
+    margin: 1.55rem 2.725rem 0;    
+    color: white;
+}
+
+h2 {
+    margin:0;
+    font-size: 100px;
 	color: #00979c;
 	text-align: center;
 }
 
-img {
-	width: 8%;
-	display: block;
-	position: right;
-
+img{
+    float: left;
+    width: 8%;
 }
+
 .elemento-opcion{
 	display: inline;
 	list-style-type: none;
@@ -33,7 +48,6 @@ img {
     color: #e4e4e4 !important;
     padding: 0;
     vertical-align: top;
-    
 }
 
 form {
@@ -50,4 +64,74 @@ form {
     padding-left: 5px;
     color: #ccc;
     vertical-align: auto;
+}
+
+.categoria{
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+.foro{
+    border-top: 1px solid rgba(255,255,255,.15);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+} 
+
+.foro{
+    margin: 1.25rem .625rem 0 ;  
+    width: calc((100&/2)- 1.25rem);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foro-description {
+    font-size: .9375rem;
+    line-height: 1.25;
+    margin: .25em 0 0;
+    max-height: 3.515625rem;
+    overflow: hidden;
+    padding: 0;
+}
+
+.foro-details {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.foro-heading {
+    font-family: sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 100;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.foro-contenido{
+    display: flex;
+    flex-direction: row;
+    padding: 1.160rem;
+    margin: 1.55rem 2.725rem 0;    
+    box-shadow: 0 0 0 1px #563737;
+    background-color: rgba(255,255,255,.05);
+    border-width: 1px;
+    color: rgba(255,255,255,.7);
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    border: none;   
+    width: 40%;
+}  
+
+a {
+    background-color: transparent;
+    color: #00adef;
 }

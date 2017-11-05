@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
+		<title>FORUMPOL | "El foro mas cool de toda la Espol"</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href= "css/estilo.css" />
-		<title>FORUMPOL</title>
+		<link href="espol.ico" rel = "shortcut icon"/>﻿		
 	</head>
 	<body>
-		<header id="cabecera">
-			<h1>FORUMPOL</h1>
-			<img src="img/espol.png" alt="icono">
+		<div id="cabecera">
+			<img class ="imagen inline" src="img/espol.png" alt="icono">
+			<h2 class = 'titulo inline'>FORUMPOL</h2>	
+		</div>
 			<nav>
 				<ul id="menu">
 					<li class="elemento-opcion"><a href="#">Inicio</a></li>
@@ -17,18 +19,44 @@
 					<li class="elemento-opcion"><a href="#">Acerca de nosotros</a></li>
 				</ul>
 			</nav>
-			<div id = "buscador">
-				<form action = "/buscar.php " id = "cse-search-box">
+				<div id = "buscador">
+					<form action = "/buscar.php " id = "cse-search-box">
 						<input type = "hidden" name = "cx" value = "partner-pub-2899450519669111">
 						<input type = "hidden" name = "cof" value = "FORID:11">
 						<input type = "hidden" name = "ie" value = "ISO-8859-1">
 						<input type = "text" name = "q" id = "textobuscar" placeholder = "ej. css">
 						<input type = "submit" name = "sa" value = "Buscar" id = "botonbuscar">
-					<input name = "siteurl" type = "hidden" value = #>
-					<input name = "ref" type = "hidden" value>
-					<input name = "ss" type = "hidden" value>
-				</form>
-			</div>	
-		</header>
-			</body>
+						<input name = "siteurl" type = "hidden" value = #>
+						<input name = "ref" type = "hidden" value>
+						<input name = "ss" type = "hidden" value>
+					</form>
+				</div>
+				<section>
+					<div class="catgoria">
+						<header class="categoria-header">
+							<h1 class="categoria-heading">COMUNIDAD ESPOL</h1>
+						</header>
+						<div class="foro">
+							<a href="#" class="foro-contenido">
+								<div class="foro-details">
+									<h1 class="foro-heading">Anuncios</h1>
+										<span class="foro-description">Informacion general de cualquier tema de la ESPOL.</span>
+								</div>
+							</a>
+							<a href="#" class="foro-contenido">
+								<div class="foro-details">
+									<h1 class="foro-heading">Clubes Espol</h1>
+										<span class="foro-description">Discuss all things Overwatch with fellow players.</span>
+								</div>
+							</a>
+							<a href="#" class="foro-contenido">
+								<div class="foro-details">
+									<h1 class="foro-heading">Vida Estudiantil</h1>
+										<span class="foro-description">Share  competitive strategies and stay up to date on  the latest esports news.</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+	</body>
 </html>
