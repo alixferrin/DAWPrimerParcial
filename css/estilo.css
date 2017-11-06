@@ -21,7 +21,7 @@
 /* Cabezera de la pagina */
 
 #cabecera {
-   background-color: #00979c;
+   background-color: #104594;
    margin: 0px;
    overflow: hidden;
 }
@@ -35,10 +35,11 @@ body {
     padding: 0;
     height: 100%;
     font-size: 1.0625rem;
+    background-color: rgb(205, 236, 244);
 }
 
 h1{   
-    color: #00979C;
+    color: #104594;
 }
 
 h2 {
@@ -47,6 +48,7 @@ h2 {
     font-size: 100px;
 	color: white;
 	text-align: center;
+    float: left;
 }
 
 img{
@@ -63,15 +65,15 @@ img{
 }
 
 nav {
-    background-color: white;
+    background-color: #00ADE1;
     text-align: center;
     border-bottom-style: solid;
-    border-bottom-color: #00979C
+    border-bottom-color: #104594;
 }
 
 ul {
     display: inline-block;
-    width: 75%
+    width: 75%;
 }
 
 ul li{
@@ -88,7 +90,7 @@ ul li{
 
 ul li a {
     text-decoration: none;
-    color: #00979C;
+    color: white;
     display: block;
 }
 
@@ -111,15 +113,14 @@ ul li a:hover{
 
 form {
     display: inline-block;
-    width: 100%;
+    float: right;
 }
 
 #textobuscar {
     width: 15%;
     border-radius: 4px 0 0 4px;
     display: inline-block;
-    border: 1px solid #3f3f3f;
-    background-color: #49594a;
+    border: 1px solid #3f3f3f;\
     padding-left: 5px;
     color: #ccc;
     vertical-align: auto;
@@ -129,13 +130,17 @@ form {
 
 #categoria{
     margin: 0 auto;
+    border-left-color: #104594;
+    border-right-color: #104594;
     border-left-style: groove;
     border-right-style: groove;
     overflow: hidden;
+    background-color: white;
+    height: 100vh;
 }
 
 .categoria-heading {
-    background-color: #0097A5;
+    background-color: #104594;
     color: white;
     padding-left: 8%;
     margin-top: 0;

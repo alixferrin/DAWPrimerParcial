@@ -8,8 +8,18 @@
 	</head>
 	<body>
 		<div id="cabecera" class="col-12">
-			<img class ="imagen inline" src="img/espol.png" alt="icono">
-			<h2 class = 'titulo inline'>FORUMPOL</h2>	
+			<span class="col-3"><img class ="imagen" src="img/espol.png" alt="icono"></span>
+			<h2 class = 'col-9'>FORUMPOL</h2>
+			<form class = "col-3" action = "/buscar.php " id = "cse-search-box">
+				<input type = "hidden" name = "cx" value = "partner-pub-2899450519669111">
+				<input type = "hidden" name = "cof" value = "FORID:11">
+				<input type = "hidden" name = "ie" value = "ISO-8859-1">
+				<input type = "text" name = "q" id = "textobuscar" placeholder = "ej. css">
+				<input type = "submit" name = "sa" value = "Buscar" id = "botonbuscar">
+				<input name = "siteurl" type = "hidden" value = #>
+				<input name = "ref" type = "hidden" value>
+				<input name = "ss" type = "hidden" value>
+			</form>
 		</div>
 		<nav id="navegation-bar" class="col-12">
 			<ul id="menu">
@@ -20,16 +30,6 @@
 				<li class="elemento-opcion"><a href="#">Acerca de nosotros</a></li>
 			</ul>
 		</nav>
-		<form action = "/buscar.php " id = "cse-search-box">
-				<input type = "hidden" name = "cx" value = "partner-pub-2899450519669111">
-				<input type = "hidden" name = "cof" value = "FORID:11">
-				<input type = "hidden" name = "ie" value = "ISO-8859-1">
-				<input type = "text" name = "q" id = "textobuscar" placeholder = "ej. css">
-				<input type = "submit" name = "sa" value = "Buscar" id = "botonbuscar">
-				<input name = "siteurl" type = "hidden" value = #>
-				<input name = "ref" type = "hidden" value>
-				<input name = "ss" type = "hidden" value>
-		</form>
 		<section>
 			<div id="categoria" class="col-9">
 				<header class="categoria-header">
