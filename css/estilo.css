@@ -21,7 +21,7 @@
 /* Cabezera de la pagina */
 
 #cabecera {
-   background-color: #104594;
+   background-color: #001C43;
    margin: 0px;
    overflow: hidden;
 }
@@ -65,10 +65,10 @@ img{
 }
 
 nav {
-    background-color: #00ADE1;
+    background: linear-gradient(#0C3770, #346096);
     text-align: center;
     border-bottom-style: solid;
-    border-bottom-color: #104594;
+    border-bottom-color: #001C43;
 }
 
 ul {
@@ -82,7 +82,6 @@ ul li{
     float: left;
     width: 20%;
     height: 40px;
-    opacity: .8;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
@@ -95,7 +94,7 @@ ul li a {
 }
 
 ul li a:hover{
-    font-weight: bold;
+    color: white;
 }
 
 /* Barra para buscar */
@@ -130,8 +129,8 @@ form {
 
 #categoria{
     margin: 0 auto;
-    border-left-color: #104594;
-    border-right-color: #104594;
+    border-left-color: #001C43;
+    border-right-color: #001C43;
     border-left-style: groove;
     border-right-style: groove;
     overflow: hidden;
@@ -140,7 +139,7 @@ form {
 }
 
 .categoria-heading {
-    background-color: #104594;
+    background-color: #001C43;
     color: white;
     padding-left: 8%;
     margin-top: 0;
