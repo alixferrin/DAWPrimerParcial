@@ -1,0 +1,123 @@
+/*Box Sizing*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Box Model*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Cabezera de la pagina */
+
+#cabecera {
+   background-color: #001C43;
+   margin: 0px;
+   overflow: hidden;
+}
+
+body {
+    position: relative;
+    top: -22px;
+    background-color: white;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1.0625rem;
+    background-color: rgb(205, 236, 244);
+}
+
+h2 {
+    padding-top: 12px;
+    margin:0;
+    font-size: 100px;
+	color: white;
+	text-align: center;
+    float: left;
+}
+
+.imagen{
+    float: left;
+    width: 10%;
+}
+
+/* Barra de navegacion */ 
+
+#menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    background: linear-gradient(#001C43, #213D5F);
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #001C43;
+}
+
+#menu {
+    display: inline-block;
+    width: 75%;
+}
+
+#menu .elemento-opcion{
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+ul li a:hover{
+    background-color: black;
+    opacity: 0.8;
+}
+
+/* Barra para buscar */
+
+#botonbuscar {
+    background-color: #00979c;
+    width: 20%;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    color: #e4e4e4 !important;
+}
+
+form {
+    display: inline-block;
+    float: right;
+}
+
+#textobuscar {
+    width: 15%;
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    border: 1px solid #3f3f3f;
+    padding-left: 5px;
+    color: #ccc;
+    vertical-align: auto;
+}
+
+/* Clase categorias */
+

@@ -39,7 +39,7 @@ body {
 }
 
 h1{   
-    color: #104594;
+    color: black;
 }
 
 h2 {
@@ -65,7 +65,7 @@ img{
 }
 
 nav {
-    background: linear-gradient(#0C3770, #346096);
+    background: linear-gradient(#001C43, #213D5F);
     text-align: center;
     border-bottom-style: solid;
     border-bottom-color: #001C43;
@@ -94,20 +94,18 @@ ul li a {
 }
 
 ul li a:hover{
-    color: white;
+    background-color: black;
+    opacity: 0.8;
 }
 
 /* Barra para buscar */
 
 #botonbuscar {
     background-color: #00979c;
-    width: 15%;
+    width: 20%;
     border-radius: 0 4px 4px 0;
-    border: 1px solid #3f3f3f;
     border-left: 0;
     color: #e4e4e4 !important;
-    padding: 0;
-    vertical-align: top;
 }
 
 form {
@@ -119,7 +117,7 @@ form {
     width: 15%;
     border-radius: 4px 0 0 4px;
     display: inline-block;
-    border: 1px solid #3f3f3f;\
+    border: 1px solid #3f3f3f;
     padding-left: 5px;
     color: #ccc;
     vertical-align: auto;
@@ -139,7 +137,7 @@ form {
 }
 
 .categoria-heading {
-    background-color: #001C43;
+    background-color: #213D5F;
     color: white;
     padding-left: 8%;
     margin-top: 0;
@@ -199,10 +197,17 @@ form {
     box-shadow: 0 0 0 1px #563737;
     background-color: rgba(255,255,255,.05);
     border-width: 1px;
-    color: #00979C;
+    color: #001C43;
     display: flex;
     position: relative;
     text-decoration: none;
     border: none;   
     width: 40%;
 }  
+
+#ino-header nav.arduino-nav.search-open #searchform {
+    background-color: #006d70;
+    background-position: 8px 2px;
+    position: relative;
+    top: -7px;
+    width: 290px;
