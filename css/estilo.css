@@ -40,6 +40,7 @@ body {
 
 h1{   
     color: black;
+    font-family: "Libre Baskerville";
 }
 
 h2 {
@@ -48,6 +49,7 @@ h2 {
     font-size: 100px;
 	color: white;
 	text-align: center;
+    font-family: "Libre Baskerville";
     float: left;
 }
 
@@ -64,7 +66,7 @@ img{
     list-style: none;
 }
 
-nav {
+nav#navegation-bar {
     background: linear-gradient(#001C43, #213D5F);
     text-align: center;
     border-bottom-style: solid;
@@ -211,3 +213,34 @@ form {
     position: relative;
     top: -7px;
     width: 290px;
+
+}
+
+div.responsive-nav{
+    display: none;
+}
+
+
+@media only screen and (max-width : 480px) {
+
+    nav#navegation-bar{
+        display: none;
+    }
+
+    div.responsive-nav{
+        display: initial;
+        
+    }
+
+    div.responsive-nav div.menu{
+        background: linear-gradient(#001C43, #213D5F);
+        border-bottom-style: solid; 
+        border-bottom-color: #001C43;
+    }
+
+    div.responsive-nav nav.navbar-background{
+        background: linear-gradient(#001C43, #213D5F);
+        border-bottom-style: solid; 
+        border-bottom-color: #001C43;
+    }
+}

@@ -3,8 +3,13 @@
 	<head>
 		<title>FORUMPOL | "El foro mas cool de toda la ESPOL"</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Foro de temas variados de ESPOL">
 		<link rel="stylesheet" href= "css/estilo.css" />
 		<link href="espol.ico" rel = "shortcut icon"/>﻿		
+
 	</head>
 	<body>
 		<div id="cabecera" class="col-12">
@@ -19,13 +24,13 @@
 				<input name = "ref" type = "hidden" value>
 				<input name = "ss" type = "hidden" value>
 			</form>
-<form role="search" id="searchform" method="GET" action="https://blog.arduino.cc">
-            <input type="hidden" name="ie" value="UTF-8">
-            <input type="hidden" name="oe" value="UTF-8">
-            <input type="text" placeholder="Search" value="" name="s" title="" class="search-typing" id="s">
-            <input type="hidden" name="domains" value="" class="fill-it">
-            <input type="hidden" name="sitesearch" value="" class="fill-it">
-          </form>			
+			<form role="search" id="searchform" method="GET" action="https://blog.arduino.cc">
+	            <input type="hidden" name="ie" value="UTF-8">
+	            <input type="hidden" name="oe" value="UTF-8">
+	            <input type="text" placeholder="Search" value="" name="s" title="" class="search-typing" id="s">
+	            <input type="hidden" name="domains" value="" class="fill-it">
+	            <input type="hidden" name="sitesearch" value="" class="fill-it">
+          	</form>			
 		</div>
 		<nav id="navegation-bar" class="col-12">
 			<ul id="menu">
@@ -36,6 +41,22 @@
 				<li class="elemento-opcion"><a href="#">Acerca de nosotros</a></li>
 			</ul>
 		</nav>
+
+		<!--NAVEGACION RESPONSIVE-->
+		<div class="pos-f-t responsive-nav">
+		  <div class="collapse" id="navbarToggleExternalContent">
+		    <div class="p-4 menu">
+		      <h4 class="text-white"><a href="forumpol.html">Inicio</a></h4>
+		      <span class="text-muted">Toggleable via the navbar brand.</span>
+		    </div>
+		  </div>
+		  <nav class="navbar navbar-light navbar-background">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		  </nav>
+		</div>
+
 		<section>
 			<div id="categoria" class="col-9">
 				<header class="categoria-header">
@@ -63,5 +84,8 @@
 				</div>
 			</div>
 		</section>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	</body>
 </html>
