@@ -1,5 +1,6 @@
 /*Box Sizing*/
 
+
 * {
     box-sizing: border-box;
 }
@@ -27,6 +28,7 @@
 }
 
 body {
+    font-family: "Times New Roman";
     position: relative;
     top: -22px;
     background-color: white;
@@ -93,11 +95,13 @@ ul li a {
     text-decoration: none;
     color: white;
     display: block;
+    opacity: 0.85;
 }
 
 ul li a:hover{
-    background-color: black;
-    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
 }
 
 /* Barra para buscar */
@@ -136,6 +140,7 @@ form {
     overflow: hidden;
     background-color: white;
     height: 100vh;
+    padding: 0px;
 }
 
 .categoria-heading {
@@ -144,6 +149,7 @@ form {
     padding-left: 8%;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 20px;
 }
 
 /* Clases foro */
