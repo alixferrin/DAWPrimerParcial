@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id="cabecera" class="col-12">
-			<span class="col-3"><img class ="imagen" src="img/espol.png" alt="icono"></span>
+			<span class="logo col-3"><img class ="imagen" src="img/espol.png" alt="icono"></span>
 			<h2 class = 'col-9'>FORUMPOL</h2>
 			<form class = "col-3" action = "/buscar.php " id = "cse-search-box">
 				<input type = "hidden" name = "cx" value = "partner-pub-2899450519669111">
@@ -46,8 +46,23 @@
 		<div class="pos-f-t responsive-nav">
 		  <div class="collapse" id="navbarToggleExternalContent">
 		    <div class="p-4 menu">
-		      <h4 class="text-white"><a href="forumpol.html">Inicio</a></h4>
-		      <span class="text-muted">Toggleable via the navbar brand.</span>
+		      <ul class="navbar-nav">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="forumpol.html">Inicio<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="galeria.html">Galeria</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="mapa.html">Mapa</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Preguntas</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Nosotros</a>
+			      </li>
+			   </ul>
 		    </div>
 		  </div>
 		  <nav class="navbar navbar-light navbar-background">

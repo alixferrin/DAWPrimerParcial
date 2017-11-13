@@ -220,6 +220,10 @@ div.responsive-nav{
 
 @media only screen and (max-width : 480px) {
 
+    span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
+        display: none;
+    }
+
     nav#navegation-bar{
         display: none;
     }

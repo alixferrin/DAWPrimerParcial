@@ -40,6 +40,7 @@ body {
 
 h1{   
     color: black;
+    font-family: "Libre Baskerville";
 }
 
 #cabecera h2 {
@@ -50,6 +51,7 @@ h1{
 	text-align: center;
     float: left;
     font-weight: bold;
+    font-family: "Libre Baskerville";
 }
 
 img{
@@ -131,7 +133,8 @@ form {
 /* Anuncios */
 
 #categoria h2 {
-    color: #001C43
+    color: #001C43;
+
 }
 
 #categoria{
@@ -141,4 +144,37 @@ form {
     overflow: hidden;
     background-color: white;
     height: 100vh;
+}
+
+div.responsive-nav{
+    display: none;
+}
+
+
+@media only screen and (max-width : 480px) {
+
+    span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
+        display: none;
+    }
+
+    nav#navegation-bar{
+        display: none;
+    }
+
+    div.responsive-nav{
+        display: initial;
+        
+    }
+
+    div.responsive-nav div.menu{
+        background: linear-gradient(#001C43, #213D5F);
+        border-bottom-style: solid; 
+        border-bottom-color: #001C43;
+    }
+
+    div.responsive-nav nav.navbar-background{
+        background: linear-gradient(#001C43, #213D5F);
+        border-bottom-style: solid; 
+        border-bottom-color: #001C43;
+    }
 }
