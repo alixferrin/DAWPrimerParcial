@@ -34,21 +34,22 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-size: 1.0625rem;
     background-color: rgb(205, 236, 244);
+    font-family: "Times New Roman";
 }
 
 h1{   
     color: black;
 }
 
-h2 {
-    padding-top: 12px;
+#cabecera h2 {
+    padding-top: 15px;
     margin:0;
     font-size: 100px;
 	color: white;
 	text-align: center;
     float: left;
+    font-weight: bold;
 }
 
 img{
@@ -64,19 +65,23 @@ img{
     list-style: none;
 }
 
-nav {
+nav#navegation-bar {
     background: linear-gradient(#001C43, #213D5F);
     text-align: center;
     border-bottom-style: solid;
     border-bottom-color: #001C43;
 }
 
-ul {
+nav#paginas {
+    text-align: center;
+}
+
+#navegation-bar ul {
     display: inline-block;
     width: 75%;
 }
 
-ul li{
+#navegation-bar ul li{
     padding: 0;
     margin: 0;
     float: left;
@@ -87,13 +92,13 @@ ul li{
     font-size: 20px;
 }
 
-ul li a {
+#navegation-bar ul li a {
     text-decoration: none;
     color: white;
     display: block;
 }
 
-ul li a:hover{
+#navegation-bar ul li a:hover{
     background-color: black;
     opacity: 0.8;
 }
@@ -123,88 +128,17 @@ form {
     vertical-align: auto;
 }
 
-/* Clase categorias */
+/* Anuncios */
+
+#categoria h2 {
+    color: #001C43
+}
 
 #categoria{
     margin: 0 auto;
-    border-left-color: #001C43;
-    border-right-color: #001C43;
     border-left-style: groove;
     border-right-style: groove;
     overflow: hidden;
     background-color: white;
     height: 100vh;
 }
-
-.categoria-heading {
-    background-color: #213D5F;
-    color: white;
-    padding-left: 8%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Clases foro */
-
-.foro{
-    border-top: 1px solid rgba(255,255,255,.15);
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-    margin: 1.25rem .625rem 1.25rem ;  
-    width: calc((100&/2)- 1.25rem);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.foro-description {
-    font-size: .9375rem;
-    line-height: 1.25;
-    margin: .25em 0 0;
-    max-height: 3.515625rem;
-    overflow: hidden;
-    padding: 0;
-}
-
-.foro-details {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    margin-left: 1rem;
-    overflow: hidden;
-}
-
-.foro-heading {
-    font-family: sans-serif;
-    font-size: 1.0625rem;
-    font-weight: 100;
-    font-weight: bold;
-    line-height: 1.25;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.foro-contenido{
-    display: flex;
-    flex-direction: row;
-    padding: 1.160rem;
-    margin: 1.25rem 2.725rem 1.25rem;    
-    box-shadow: 0 0 0 1px #563737;
-    background-color: rgba(255,255,255,.05);
-    border-width: 1px;
-    color: #001C43;
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    border: none;   
-    width: 40%;
-}  
-
-#ino-header nav.arduino-nav.search-open #searchform {
-    background-color: #006d70;
-    background-position: 8px 2px;
-    position: relative;
-    top: -7px;
-    width: 290px;
