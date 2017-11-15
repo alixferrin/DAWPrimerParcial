@@ -1,6 +1,5 @@
 /*Box Sizing*/
 
-
 * {
     box-sizing: border-box;
 }
@@ -28,16 +27,15 @@
 }
 
 body {
-    font-family: "Times New Roman";
     position: relative;
-    top: -22px;
+    top: -24px;
     background-color: white;
     background-size:cover;
     margin: 0;
     padding: 0;
     height: 100%;
-    font-size: 1.0625rem;
     background-color: rgb(205, 236, 244);
+    font-family: "Times New Roman";
 }
 
 h1{   
@@ -45,14 +43,15 @@ h1{
     font-family: "Libre Baskerville";
 }
 
-h2 {
-    padding-top: 12px;
-    margin:0;
+#cabecera h2 {
+    padding-top: 15px;
+    margin-top: 20px;
     font-size: 100px;
-	color: white;
-	text-align: center;
-    font-family: "Libre Baskerville";
+    color: white;
+    text-align: center;
     float: left;
+    font-weight: bold;
+    font-family: "Libre Baskerville";
 }
 
 img{
@@ -106,27 +105,64 @@ ul li a:hover{
 
 /* Barra para buscar */
 
-#botonbuscar {
-    background-color: #00979c;
-    width: 20%;
-    border-radius: 0 4px 4px 0;
-    border-left: 0;
-    color: #e4e4e4 !important;
+#search {
+    padding-top: 3px;
+    margin-left: 38%;
 }
 
-form {
-    display: inline-block;
-    float: right;
+.form-group {
+    margin-bottom: 0;
 }
 
-#textobuscar {
-    width: 15%;
-    border-radius: 4px 0 0 4px;
-    display: inline-block;
-    border: 1px solid #3f3f3f;
-    padding-left: 5px;
-    color: #ccc;
-    vertical-align: auto;
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
 }
 
 /* Clase categorias */
@@ -146,10 +182,10 @@ form {
 .categoria-heading {
     background-color: #213D5F;
     color: white;
-    padding-left: 8%;
+    padding-left: 6%;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 20px;
+    display: flex;
 }
 
 /* Clases foro */
@@ -158,19 +194,19 @@ form {
     border-top: 1px solid rgba(255,255,255,.15);
     display: flex;
     flex-wrap: wrap;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-    margin: 1.25rem .625rem 1.25rem ;  
-    width: calc((100&/2)- 1.25rem);
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+    margin: 1.25em .625em 1.25em ;  
+    width: calc((100&/2)- 1.25em);
     display: flex;
     flex-wrap: wrap;
 }
 
 .foro-description {
-    font-size: .9375rem;
+    font-size: .9375em;
     line-height: 1.25;
     margin: .25em 0 0;
-    max-height: 3.515625rem;
+    max-height: 3.515625em;
     overflow: hidden;
     padding: 0;
 }
@@ -179,13 +215,13 @@ form {
     display: flex;
     flex: auto;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 1em;
     overflow: hidden;
 }
 
 .foro-heading {
     font-family: sans-serif;
-    font-size: 1.0625rem;
+    font-size: 1.0625em;
     font-weight: 100;
     font-weight: bold;
     line-height: 1.25;
@@ -197,8 +233,8 @@ form {
 .foro-contenido{
     display: flex;
     flex-direction: row;
-    padding: 1.160rem;
-    margin: 1.25rem 2.725rem 1.25rem;    
+    padding: 1.160em;
+    margin: 1.25em 2.725em 1.25em;    
     box-shadow: 0 0 0 1px #563737;
     background-color: rgba(255,255,255,.05);
     border-width: 1px;

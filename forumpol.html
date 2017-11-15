@@ -3,8 +3,7 @@
 	<head>
 		<title>FORUMPOL | "El foro mas cool de toda la ESPOL"</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-		
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Foro de temas variados de ESPOL">
 		<link rel="stylesheet" href= "css/estilo.css" />
@@ -14,23 +13,7 @@
 	<body>
 		<div id="cabecera" class="col-12">
 			<span class="logo col-3"><img class ="imagen" src="img/espol.png" alt="icono"></span>
-			<h2 class = 'col-9'>FORUMPOL</h2>
-			<form class = "col-3" action = "/buscar.php " id = "cse-search-box">
-				<input type = "hidden" name = "cx" value = "partner-pub-2899450519669111">
-				<input type = "hidden" name = "cof" value = "FORID:11">
-				<input type = "hidden" name = "ie" value = "ISO-8859-1">
-				<input type = "submit" name = "sa" value = "Buscar" id = "botonbuscar">
-				<input name = "siteurl" type = "hidden" value = #>
-				<input name = "ref" type = "hidden" value>
-				<input name = "ss" type = "hidden" value>
-			</form>
-			<form role="search" id="searchform" method="GET" action="https://blog.arduino.cc">
-	            <input type="hidden" name="ie" value="UTF-8">
-	            <input type="hidden" name="oe" value="UTF-8">
-	            <input type="text" placeholder="Search" value="" name="s" title="" class="search-typing" id="s">
-	            <input type="hidden" name="domains" value="" class="fill-it">
-	            <input type="hidden" name="sitesearch" value="" class="fill-it">
-          	</form>			
+			<h2 class = 'col-9'>FORUMPOL</h2>		
 		</div>
 		<nav id="navegation-bar" class="col-12">
 			<ul id="menu">
@@ -41,7 +24,7 @@
 				<li class="elemento-opcion"><a href="#">Acerca de nosotros</a></li>
 			</ul>
 		</nav>
-
+    </div>
 		<!--NAVEGACION RESPONSIVE-->
 		<div class="pos-f-t responsive-nav">
 		  <div class="collapse" id="navbarToggleExternalContent">
@@ -75,7 +58,17 @@
 		<section>
 			<div id="categoria" class="col-9">
 				<header class="categoria-header">
-					<h1 class="categoria-heading">COMUNIDAD ESPOL</h1>
+					<h1 class="categoria-heading">COMUNIDAD ESPOL
+				        <div id="search" class="col-md-4 col-md-offset-3">
+				            <form action="" class="search-form">
+				                <div class="form-group has-feedback">
+				            		<label for="search" class="sr-only">Search</label>
+				            		<input type="text" class="form-control" name="search" id="search" placeholder="search">
+				              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+				            	</div>
+				            </form>
+				        </div>
+					</h1>
 				</header>
 				<div class="foro">
 					<a href="anuncios.html" class="foro-contenido">
@@ -122,8 +115,7 @@
 				</div>
 			</div>
 		</section>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
