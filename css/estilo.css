@@ -27,31 +27,31 @@
 }
 
 body {
-    position: relative;
-    top: -24px;
-    background-color: white;
-    background-size:cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(205, 236, 244);
-    font-family: "Times New Roman";
+  position: relative;
+  top: -24px;
+  background-color: white;
+  background-size:cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(205, 236, 244);
+  font-family: "Times New Roman";
 }
 
 h1{   
-    color: black;
-    font-family: "Libre Baskerville";
+  color: black;
+  font-family: "Libre Baskerville";
 }
 
 #cabecera h2 {
-    padding-top: 15px;
-    margin-top: 20px;
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    float: left;
-    font-weight: bold;
-    font-family: "Libre Baskerville";
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  float: left;
+  font-weight: bold;
+  font-family: "Libre Baskerville";
 }
 
 img{
@@ -106,7 +106,6 @@ ul li a:hover{
 /* Barra para buscar */
 
 #search {
-    padding-top: 3px;
     margin-left: 38%;
 }
 
@@ -181,112 +180,111 @@ ul li a:hover{
 
 .categoria-heading {
 	padding-left: 1.900em;
-	padding-top: 0.3em;
+	padding-top: 0.2em;
 	padding-bottom: 0.2em;
-    background-color: #213D5F;
-    color: white;
-    display: flex;
-    margin: 0;
-    font-size: 25px;
+  background-color: #213D5F;
+  color: white;
+  display: flex;
+  margin: 0;
+  font-size: 25px;
 }
 
 /* Clases foro */
 
 .foro{
-    border-top: 1px solid rgba(255,255,255,.15);
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 1.875em;
-    padding-right: 1.875em;
-    margin: 1.25em .625em 1.25em ;  
-    width: calc((100&/2)- 1.25em);
-    display: flex;
-    flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,.15);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  margin: 1.25em .625em 1.25em ;  
+  width: calc((100&/2)- 1.25em);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .foro-description {
-    font-size: 1em;
-    line-height: 1.25;
-    margin: .25em 0 0;
-    max-height: 3.515625em;
-    overflow: hidden;
-    padding: 0;
+  font-size: 1em;
+  line-height: 1.25;
+  margin: .25em 0 0;
+  max-height: 3.515625em;
+  overflow: hidden;
+  padding: 0;
 }
 
 .foro-details {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    margin-left: 1em;
-    overflow: hidden;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  margin-left: 1em;
+  overflow: hidden;
 }
 
 .foro-heading {
-    font-family: sans-serif;
-    font-size: 1.2625em;
-    font-weight: 100;
-    font-weight: bold;
-    line-height: 1.25;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.2625em;
+  font-weight: 100;
+  font-weight: bold;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
 }
 
 .foro-contenido{
-    display: flex;
-    flex-direction: row;
-    padding: 1.160em;
-    margin: 1.25em 2.725em 1.25em;    
-    box-shadow: 0 0 0 1px #563737;
-    background-color: rgba(255,255,255,.05);
-    border-width: 1px;
-    color: #001C43;
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    border: none;   
-    width: 40%;
+  display: flex;
+  flex-direction: row;
+  padding: 1.160em;
+  margin: 1.25em 2.725em 1.25em;    
+  box-shadow: 0 0 0 1px #563737;
+  background-color: rgba(255,255,255,.05);
+  border-width: 1px;
+  color: #001C43;
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  border: none;   
+  width: 40%;
 }  
 
 #ino-header nav.arduino-nav.search-open #searchform {
-    background-color: #006d70;
-    background-position: 8px 2px;
-    position: relative;
-    top: -7px;
-    width: 290px;
+  background-color: #006d70;
+  background-position: 8px 2px;
+  position: relative;
+  top: -7px;
+  width: 290px;
 
 }
 
 div.responsive-nav{
-    display: none;
+  display: none;
 }
 
 
 @media only screen and (max-width : 480px) {
+  
+  span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
+    display: none;
+  }
 
-    span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
-        display: none;
-    }
+  nav#navegation-bar{
+    display: none;
+  }
 
-    nav#navegation-bar{
-        display: none;
-    }
+  div.responsive-nav{
+    display: initial;  
+  }
 
-    div.responsive-nav{
-        display: initial;
-        
-    }
+  div.responsive-nav div.menu{
+    background: linear-gradient(#001C43, #213D5F);
+    border-bottom-style: solid; 
+    border-bottom-color: #001C43;
+  }
 
-    div.responsive-nav div.menu{
-        background: linear-gradient(#001C43, #213D5F);
-        border-bottom-style: solid; 
-        border-bottom-color: #001C43;
-    }
-
-    div.responsive-nav nav.navbar-background{
-        background: linear-gradient(#001C43, #213D5F);
-        border-bottom-style: solid; 
-        border-bottom-color: #001C43;
-    }
+  div.responsive-nav nav.navbar-background{
+    background: linear-gradient(#001C43, #213D5F);
+    border-bottom-style: solid; 
+    border-bottom-color: #001C43;
+  }
 }

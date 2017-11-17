@@ -28,7 +28,7 @@
 
 body {
     position: relative;
-    top: -22px;
+    top: -25px;
     background-color: white;
     background-size:cover;
     margin: 0;
@@ -49,9 +49,8 @@ body {
     font-weight: bold;
     font-family: "Libre Baskerville";
 }
-}
 
-img.imagen{
+img {
     float: left;
     width: 10%;
 }
