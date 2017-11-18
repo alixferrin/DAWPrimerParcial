@@ -33,7 +33,7 @@ body {
   background-size:cover;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: auto;
   background-color: rgb(205, 236, 244);
   font-family: "Times New Roman";
 }
@@ -57,7 +57,9 @@ h1{
 img{
     float: left;
     width: 10%;
+
 }
+
 
 /* Barra de navegacion */ 
 
@@ -261,6 +263,18 @@ div.responsive-nav{
   display: none;
 }
 
+/*Acerca de cards*/
+
+img.card{
+  float: none;
+  width: 40%;
+}
+
+
+
+.thumbnail{
+  margin: 10% 5%;
+}
 
 @media only screen and (max-width : 480px) {
   
