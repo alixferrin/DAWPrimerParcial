@@ -270,7 +270,10 @@ img.card{
   width: 40%;
 }
 
-
+div#enlace-repositorio{
+  text-align: center;
+  margin: 5%;
+}
 
 .thumbnail{
   margin: 10% 5%;
