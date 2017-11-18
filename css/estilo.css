@@ -57,7 +57,6 @@ h1{
 img{
     float: left;
     width: 10%;
-
 }
 
 
@@ -97,6 +96,7 @@ ul li a {
     color: white;
     display: block;
     opacity: 0.85;
+    font-size: 1.065em;   
 }
 
 ul li a:hover{
@@ -108,7 +108,7 @@ ul li a:hover{
 /* Barra para buscar */
 
 #search {
-    margin-left: 38%;
+    margin-left: 60%;
 }
 
 .form-group {

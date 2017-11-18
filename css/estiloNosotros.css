@@ -27,34 +27,35 @@
 }
 
 body {
-    position: relative;
-    top: -25px;
-    background-color: white;
-    background-size:cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: rgb(205, 236, 244);
-    font-family: "Times New Roman";
-   
+  position: relative;
+  top: -24px;
+  background-color: white;
+  background-size:cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(205, 236, 244);
+  font-family: "Times New Roman";
 }
 
-.col-9{
-    padding-top: 15px;
-    margin-top: 20px;
-    font-size: 100px;
-    color: white;
-    text-align: center;
+h1{   
+  color: black;
+  font-family: "Libre Baskerville";
+}
+
+#cabecera h2 {
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  float: left;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+}
+
+img{
     float: left;
-    font-weight: bold;
-    font-family: "Libre Baskerville";
-}
-
-.imagen{
-    float: left;
-}
-
-img {
     width: 10%;
 }
 
@@ -66,19 +67,19 @@ img {
     list-style: none;
 }
 
-nav {
+nav#navegation-bar {
     background: linear-gradient(#001C43, #213D5F);
     text-align: center;
     border-bottom-style: solid;
     border-bottom-color: #001C43;
 }
 
-#menu {
+ul#menu {
     display: inline-block;
     width: 75%;
 }
 
-#menu .elemento-opcion{
+li.elemento-opcion{
     padding: 0;
     margin: 0;
     float: left;
@@ -95,7 +96,6 @@ ul li a {
     display: block;
     opacity: 0.85;
     font-size: 1.065em;
-
 }
 
 ul li a:hover{
@@ -103,7 +103,6 @@ ul li a:hover{
     color: white;
     opacity: 1;
 }
-
 
 /* Barra para buscar */
 
@@ -167,30 +166,68 @@ ul li a:hover{
 }
 
 /* Clase categorias */
-div.responsive-nav{
-    display: none;
+
+#categoria{
+    margin: 0 auto;
+    border-left-color: #001C43;
+    border-right-color: #001C43;
+    border-left-style: groove;
+    border-right-style: groove;
+    overflow: hidden;
+    background-color: white;
+    height: 100vh;
+    padding: 0px;
 }
 
+.categoria-heading {
+	padding-left: 1.900em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+  background-color: #213D5F;
+  color: white;
+  display: flex;
+  margin: 0;
+  font-size: 25px;
+}
+
+
+#ino-header nav.arduino-nav.search-open #searchform {
+  background-color: #006d70;
+  background-position: 8px 2px;
+  position: relative;
+  top: -7px;
+  width: 290px;
+
+}
+
+div.responsive-nav{
+  display: none;
+}
+
+
 @media only screen and (max-width : 480px) {
+  
+  span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
+    display: none;
+  }
 
-    span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
-        display: none;
-    }
+  nav#navegation-bar{
+    display: none;
+  }
 
-    div.responsive-nav{
-        display: initial;
-        
-    }
+  div.responsive-nav{
+    display: initial;  
+  }
 
-    div.responsive-nav div.menu{
-        background: linear-gradient(#001C43, #213D5F);
-        border-bottom-style: solid; 
-        border-bottom-color: #001C43;
-    }
+  div.responsive-nav div.menu{
+    background: linear-gradient(#001C43, #213D5F);
+    border-bottom-style: solid; 
+    border-bottom-color: #001C43;
+  }
 
-    div.responsive-nav nav.navbar-background{
-        background: linear-gradient(#001C43, #213D5F);
-        border-bottom-style: solid; 
-        border-bottom-color: #001C43;
-    }
+  div.responsive-nav nav.navbar-background{
+    background: linear-gradient(#001C43, #213D5F);
+    border-bottom-style: solid; 
+    border-bottom-color: #001C43;
+  }
 }
