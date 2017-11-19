@@ -1,0 +1,45 @@
+/* Clase categorias */
+
+section {
+  padding-top: 18px;
+}
+
+#categoria {
+	margin: 0 auto;
+	border-left-color: #001C43;
+	border-right-color: #001C43;
+	border-bottom-color: #001C43;
+	border-left-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	overflow: hidden;
+	background-color: white;
+	padding: 0px;
+}
+
+.categoria-heading {
+	padding-left: 1.900em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	background-color: #213D5F;
+	color: white;
+	display: flex;
+	margin: 0;
+	font-size: 25px;
+}
+
+/*Acerca de cards*/
+
+img.card{
+	float: none;
+	width: 40%;
+}
+
+div#enlace-repositorio{
+	text-align: center;
+	margin: 5%;
+}
+
+.thumbnail{
+	margin: 10% 5%;
+}

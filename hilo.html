@@ -4,10 +4,10 @@
 		<title>FORUMPOL | "El foro mas cool de toda la ESPOL"</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="Anuncios de la ESPOL">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href= "css/estilo.css"/>	
-		<link rel="stylesheet" href= "css/anuncios.css"/>
+		<meta name="description" content="Hilo">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href= "css/estilo.css" />
+		<link rel="stylesheet" type="text/css" href="css/hilo.css">
 		<link href="espol.ico" rel = "shortcut icon"/>﻿
 	</head>
 	<body>
@@ -66,29 +66,60 @@
 		  </nav>
 		</div>
 
-		<section>
-			<div id="categoria" class="col-9">
-				<div class="container">
-					<h2><b>ANUNCIOS</b></h2>
-					<ul class="list-group">
-						<li class="list-group-item"><a href="hilo.html">Baile de Gala<span class="badge pull-right">123</span></a></li>
-						<li class="list-group-item">Fiesta de FEPOL<span class="badge">12</span></li>
-						<li class="list-group-item">Ayudantias FEPOL<span class="badge">23</span></li>
-						<li class="list-group-item">Feria de emprendimiento<span class="badge">52</span></li>
-					</ul>
-					<nav id="paginas">
-						<ul class="pagination">
-							<li><a href="#" aria-label="Previous"><span>&laquo;</span></a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#" aria-label="Next"><span>&raquo;</span></a></li>
-						</ul>
-					</nav>
+		<!-- HILO -->
+		<div id="hilo" class="col-9">
+			<div id="op-post" class="container-fluid">
+				<h3 class="post-topic">Baile de gala</h3>
+				<div class="poster">
+					<div class="poster-info">
+						<span class="glyphicon glyphicon-user"> alicsita</span>
+						<img src="img/alics.png">
+					</div>
+				</div>
+				<div class="post-area">
+					<p>no tengo pareja para el baile de gala :c</p>
+				</div>
+				<div class="opciones">
+					<a href="#">>> responder</a>
 				</div>
 			</div>
-		</section>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+			<div class="container-fluid rep">
+				<div class="poster">
+					<span class="glyphicon glyphicon-user"> awesomejoe</span>
+					<div class="poster-info">
+						<img src="img/joe.jpg">
+					</div>
+				</div>
+				<div class="post-area">
+					<p>ps ke pena puerk :v</p>
+				</div>
+				<div class="opciones">
+					<a href="#">>> responder</a>
+				</div>
+			</div>
+			<div class="container-fluid rep">
+				<div class="poster">
+					<span class="glyphicon glyphicon-user"> xXGeancaXx</span>
+					<div class="poster-info">
+						<img src="img/geanca.jpg">
+					</div>
+				</div>
+				<div class="post-area">
+					<p>ps ke pena puerk :v x2</p>
+				</div>
+				<div class="opciones">
+					<a href="#">>> responder</a>
+				</div>
+			</div>
+			<nav id="paginas">
+				<ul class="pagination">
+					<li><a href="#" aria-label="Previous"><span>&laquo;</span></a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#" aria-label="Next"><span>&raquo;</span></a></li>
+				</ul>
+			</nav>
+		</div>
 	</body>
 </html>

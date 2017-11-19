@@ -1,0 +1,25 @@
+/* Anuncios */
+
+section {
+	padding-top: 25px;
+}
+
+#categoria h2 {
+  color: #001C43;
+
+}
+
+#categoria{
+  margin: 0 auto;
+  border-style: groove;
+  overflow: hidden;
+  background-color: white;
+}
+
+div.responsive-nav{
+    display: none;
+}
+
+#paginas {
+	text-align: right;
+}

@@ -3,36 +3,39 @@
 	<head>
 		<title>GALERIA | "El foro mas cool de toda la ESPOL"</title>
 		<meta charset="UTF-8">
-		<link href="espol.ico" rel = "shortcut icon"/>﻿	
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Mapa">
         <link rel="stylesheet" href="css/bootstrap.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href= "css/estilogaleria.css" />
-		<link href="src/css/least.min.css" rel="stylesheet" />			
+        <link rel="stylesheet" href= "css/estilo.css" />
+		<link rel="stylesheet" href="src/css/least.min.css" />
+        <link href="espol.ico" rel = "shortcut icon"/>﻿ 			
 	</head>
 	<body>
 		<div id="cabecera" class="col-12">
-            <span class="logo col-3"><img class ="imagen" src="img/espol.png" alt="icono"></span>
-			<h2 class = 'col-9'>FORUMPOL</h2>
-            <div id="search" class="col-md-4 col-md-offset-3">
-                <form action="" class="search-form">
-                    <div class="form-group has-feedback">
-                        <label for="search" class="sr-only">Search</label>
-                        <input type="text" class="form-control" name="search" id="search" placeholder="search">
-                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                    </div>
-                </form>
-            </div>           
-		</div>
-		<nav id="navegation-bar" class="col-12">
-			<ul id="menu">
-				<li class="elemento-opcion"><a href="index.html">Inicio</a></li>
-				<li class="elemento-opcion"><a href="galeria.html">Galeria</a></li>
-				<li class="elemento-opcion"><a href="mapa.html">Mapa</a></li>
+            <span class="logo col-1"><img class ="imagen" src="img/espol.png" alt="icono"></span>
+            <h2 class = 'col-9'>FORUMPOL</h2>
+            <div id="header-opts" class="col-2">
+                <div id="search" class="col-7">
+                    <form action="" class="search-form">
+                        <div class="form-group has-feedback">
+                            <label for="search" class="sr-only">buscar</label>
+                            <input type="text" class="form-control" name="search" id="search" placeholder="Buscar...">
+                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </div>
+                    </form>
+                </div>
+                <h4 class="col-5"><a href="#">Iniciar Sesion</a></h4>
+            </div>
+        </div>
+        <nav id="navegation-bar" class="col-12">
+            <ul id="menu">
+                <li class="elemento-opcion"><a href="index.html">Inicio</a></li>
+                <li class="elemento-opcion"><a href="galeria.html">Galeria</a></li>
+                <li class="elemento-opcion"><a href="mapa.html">Mapa</a></li>
                 <li class="elemento-opcion"><a href="fechas.html">Fechas Históricas</a></li>
                 <li class="elemento-opcion"><a href="acercaDe.html">Acerca de nosotros</a></li>
-			</ul>
-		</nav>
-
+            </ul>
+        </nav>
         <!--NAVEGACION RESPONSIVE-->
         <div class="pos-f-t responsive-nav">
           <div class="collapse" id="navbarToggleExternalContent">

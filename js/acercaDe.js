@@ -12,10 +12,6 @@ document.getElementById("botonJoe").addEventListener("click", function(){
 	window.open("https://github.com/JoeSvr95")
 })
 
-document.getElementById("botonJoe").addEventListener("click", function(){
-	window.open("https://github.com/JoeSvr95")
-})
-
 /*boton a repositorio*/
 var repositorio = document.getElementById("enlace-repositorio");
 
