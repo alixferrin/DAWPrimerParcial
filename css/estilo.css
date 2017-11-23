@@ -209,13 +209,13 @@ ul li.elemento-opcion a:hover{
 
 }
 
-div.responsive-nav{
+nav.responsive-nav{
   display: none;
 }
 
 
 @media only screen and (max-width : 480px) {
-  span.logo, form#cse-search-box,form#searchform, nav#navegation-bar{
+  span.logo, form#cse-search-box,form#searchform, nav#navegation-bar, div#cabecera{
     display: none;
   }
 
@@ -223,20 +223,31 @@ div.responsive-nav{
     display: none;
   }
 
-  div.responsive-nav{
+  nav.responsive-nav{
     display: initial;
-      
+    background: linear-gradient(#001C43, #213D5F);
+    border-bottom-style: solid;
+    border-bottom-color: #001C43;
+    color: white;
+    
   }
 
-  div.responsive-nav div.menu{
+  nav.responsive-nav ul.nav, button.navbar-toogle{
     background: linear-gradient(#001C43, #213D5F);
-    border-bottom-style: solid; 
+    border-bottom-style: solid;
     border-bottom-color: #001C43;
+    
   }
 
-  div.responsive-nav nav.navbar-background{
-    background: linear-gradient(#001C43, #213D5F);
-    border-bottom-style: solid; 
-    border-bottom-color: #001C43;
+  div#navbar ul li{
+    color: white;
+  }
+
+  div#navbar ul li a, div.navbar-header a.navbar-brand{
+    color: white;
+  }
+
+  a.navbar-brand{
+    color: white;
   }
 }
