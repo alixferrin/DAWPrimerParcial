@@ -56,3 +56,7 @@
 #hilo-footer {
   margin: 0 auto;
 }
+
+#resp-box {
+  display: none;
+}

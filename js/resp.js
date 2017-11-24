@@ -1,63 +1,57 @@
 
 
-	$(".btn-reply").on("click", function (event) { 
+$(".resp-link").on("click", function(event) {
+	$("#resp-box").show();
+});
 
-		if ($(".resp-text").val().trim() !== "") {
-			/* Creando el container para la respuesta */
-			let $nuevaRespuesta = $("<div>");
-			$nuevaRespuesta.attr('class','container-fluid rep');
+$(".btn-reply").on("click", function (event) { 
 
-			/* Creando el container del poster */
-			let $poster = $("<div>");
-			$poster.attr('class','poster');
+	if ($(".resp-text").val().trim() !== "") {
+		/* Creando el container para la respuesta */
+		let $nuevaRespuesta = $("<div>");
+		$nuevaRespuesta.attr('class','container-fluid rep');
 
-			/* Agregando el container poster al container de respuesta */
-			$nuevaRespuesta.append($poster);
+		/* Creando el container del poster */
+		let $poster = $("<div>");
+		$poster.attr('class','poster');
 
-			/* Creando el username*/
-			let $user = $("<span>");
-			$user.attr('class','glyphicon glyphicon-user');
-			$user.append(" awesomejoe");
-			$poster.append($user);
+		/* Agregando el container poster al container de respuesta */
+		$nuevaRespuesta.append($poster);
 
-			/* Creando la imagen */
-			let $imagen = $("<div>");
-			$imagen.attr('class','poster-info');
-			let $tagImg = $("<img>");
-			$tagImg.attr('src','img/joe.jpg');
-			$imagen.append($tagImg);
+		/* Creando el username*/
+		let $user = $("<span>");
+		$user.attr('class','glyphicon glyphicon-user');
+		$user.append(" awesomejoe");
+		$poster.append($user);
 
-			/* Agregando la imagen al post area */
-			$poster.append($imagen);
+		/* Creando la imagen */
+		let $imagen = $("<div>");
+		$imagen.attr('class','poster-info');
+		let $tagImg = $("<img>");
+		$tagImg.attr('src','img/joe.jpg');
+		$imagen.append($tagImg);
 
-			/* Creando el container de la respuesta */
-			let $newPostArea = $("<div>");
-			$newPostArea.attr('class','post-area');
+		/* Agregando la imagen al post area */
+		$poster.append($imagen);
 
-			/* Obteniendo el texto del input y agregandolo al post-area */
-			let $tagRespuesta = $("<p>");
-			let $textoRespuesta = $(".resp-text").val();
-			$tagRespuesta.text($textoRespuesta);
-			$newPostArea.append($tagRespuesta);
-			
-			/* Agregando el post-area al container-fluid  */
-			$nuevaRespuesta.append($newPostArea);
+		/* Creando el container de la respuesta */
+		let $newPostArea = $("<div>");
+		$newPostArea.attr('class','post-area');
 
-			$("#hilo").append($nuevaRespuesta);
-
-			/* limpiando la caja de texto */
-			$(".resp-text").val('');
-		} else {
-			alert("Ingrese su respuesta antes de enviar");
-		}
-
-		/*
+		/* Obteniendo el texto del input y agregandolo al post-area */
+		let $tagRespuesta = $("<p>");
+		let $textoRespuesta = $(".resp-text").val();
+		$tagRespuesta.text($textoRespuesta);
+		$newPostArea.append($tagRespuesta);
 		
+		/* Agregando el post-area al container-fluid  */
+		$nuevaRespuesta.append($newPostArea);
 
-		}
-	
+		$("#hilo").append($nuevaRespuesta);
 
-	
-		$(".comment-input input").val("");
-		*/
-	}); 
+		/* limpiando la caja de texto */
+		$(".resp-text").val('');
+	} else {
+		alert("Ingrese su respuesta antes de enviar");
+	}
+});
