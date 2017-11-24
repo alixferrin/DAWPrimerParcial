@@ -51,3 +51,8 @@
 .rep .poster-info img {
   width: 73%;
 }
+
+/* final del hilo */
+#hilo-footer {
+  margin: 0 auto;
+}
