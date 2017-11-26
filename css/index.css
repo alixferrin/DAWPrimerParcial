@@ -1,7 +1,7 @@
 /* Clase categorias */
 
 section {
-  padding-top: 50px;
+  padding-top: 18px;
 }
 
 #categoria {
@@ -9,9 +9,11 @@ section {
   border-left-color: #001C43;
   border-right-color: #001C43;
   border-bottom-color: #001C43;
+  border-top-color: #001C43;
   border-left-style: groove;
   border-right-style: groove;
   border-bottom-style: groove;
+  border-top-style: groove;
   overflow: hidden;
   background-color: white;
   padding: 0px;
