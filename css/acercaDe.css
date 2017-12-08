@@ -1,17 +1,7 @@
 /* Clase categorias */
 
-section {
-  padding-top: 18px;
-}
-
 #categoria {
 	margin: 0 auto;
-	border-left-color: #001C43;
-	border-right-color: #001C43;
-	border-bottom-color: #001C43;
-	border-left-style: groove;
-	border-right-style: groove;
-	border-bottom-style: groove;
 	overflow: hidden;
 	background-color: white;
 	padding: 0px;
@@ -21,11 +11,11 @@ section {
 	padding-left: 1.900em;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
-	background-color: #213D5F;
-	color: white;
+	color: #213D5F;
 	display: flex;
 	margin: 0;
 	font-size: 25px;
+	font-weight: bold;
 }
 
 /*Acerca de cards*/
@@ -38,6 +28,10 @@ img.card{
 div#enlace-repositorio{
 	text-align: center;
 	margin: 5%;
+}
+
+.categoria-heading {
+	margin-top: 1.5em;
 }
 
 .thumbnail{

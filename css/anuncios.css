@@ -1,9 +1,5 @@
 /* Anuncios */
 
-section {
-	padding-top: 25px;
-}
-
 #categoria h2 {
   color: #001C43;
 
@@ -11,7 +7,6 @@ section {
 
 #categoria{
   margin: 0 auto;
-  border-style: groove;
   overflow: hidden;
   background-color: white;
 }

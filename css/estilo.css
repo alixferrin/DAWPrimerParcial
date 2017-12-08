@@ -1,5 +1,4 @@
 /*Box Sizing*/
-
 * {
     box-sizing: border-box;
 }
@@ -35,10 +34,9 @@
 body {
   position: relative;
   top: -20px;
+  bottom: -20px;
   background-color: white;
   background-size:cover;
-  margin: 0;
-  padding: 0;
   height: 100%;
   background-color: rgb(205, 236, 244);
   font-family: "Times New Roman";
@@ -217,6 +215,13 @@ nav.responsive-nav{
   display: none;
 }
 
+/* Footer */
+footer {
+  background-color: #001C43;
+  color: #7bdef7;
+  padding: 1.5em;
+  text-align: center;
+}
 
 @media only screen and (max-width : 480px) {
   span.logo, form#cse-search-box,form#searchform, nav#navegation-bar, div#cabecera{
