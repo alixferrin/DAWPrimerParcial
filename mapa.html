@@ -87,29 +87,26 @@
       // locate you.
 
       function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 6
-        });
-        var infoWindow = new google.maps.InfoWindow({map: map});
-
         // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
+        if (!navigator.geolocation) {
           // Browser doesn't support Geolocation
+          var infoWindow = new google.maps.InfoWindow({map: map});
           handleLocationError(false, infoWindow, map.getCenter());
+        } else {
+          var location = {lat: -2.148146, lng: -79.964489};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: location,
+            zoom: 18
+          });
+
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: '¡Hola! :)'
+          });
+
+          maker.setMap(map);
         }
       }
 
