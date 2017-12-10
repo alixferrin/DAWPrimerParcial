@@ -1,33 +1,40 @@
 
 function cargarImagenes() {
 
-    /*carga de artistas desde cantantes.json*/
+   
 
     $.getJSON("data/imagenes_galeria.json", function(data) {
         $.each(data, function(key, val) {
-        	console.log(val["title"]);
-            /*var generos = val["generos"].join(" ");
-            var div = $('<div></div>');
-            div.attr('class','col-lg-3 foto-artista '+generos);
-            div.css('background-image','url("img/'+val["archivo"]+'")');
+        	var titulo = val["title"];
+        	var archivo = val["archivo"];
+        	var tag = val["tag"];
+        	var subtitle = val["data-subtitle"];
+        	console.log(titulo);
 
-            var divOverlay = $('<div></div>');
-            divOverlay.attr('class','overlay');
+        	var a_element = $("<a></a>");
+        	a_element.attr("href", "img/galeria/" + archivo);
+        	a_element.attr("title", titulo);
+        	a_element.attr("data-subtitle", subtitle);
 
-            var divText = $('<div></div>');
-            divText.attr('class','text');
-            divText.text(val["nombre"]);
+        	var img_element = $("<img/>");
+        	img_element.attr("src", "img/galeria/" + archivo);
+        	img_element.attr("alt", titulo);
 
-            divOverlay.append(divText);
-            div.append(divOverlay);
+        	var li_element = $("<li></li>");
+        	/*li_element.attr("tag", tag);*/
+
+        	a_element.append(img_element);
+
+        	li_element.append(a_element);
+
+        	$(".least-gallery").append(li_element);
             
-            $('#artistas').append(div);*/
         });
     });
 }
 
 
-$(window).load(function() {
+$(document).ready(function() {
 
     cargarImagenes();
     

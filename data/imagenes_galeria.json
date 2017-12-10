@@ -1,3 +1,4 @@
+
 [ 
 	{
 		"title":"Rectora",
@@ -28,19 +29,19 @@
 		"archivo":"gato3.jpg",
 		"tag": "gatos",
 		"data-subtitle": "Ampliar imagen"
-	}
+	},
 	{
 		"title": "Caminito Narnia",
 		"archivo":"narnia.jpg",
 		"tag": "gatos",
 		"data-subtitle": "Ampliar imagen"
-	}
+	},
 	{
 		"title": "ESPOL Peñas",
 		"archivo":"peñas.jpg",
 		"tag": "paisajes",
 		"data-subtitle": "Ampliar imagen"
-	}
+	},
 	{
 		"title": "Sergio Flores",
 		"archivo":"sergio.jpg",
