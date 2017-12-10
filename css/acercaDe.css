@@ -25,6 +25,7 @@
 
 img.card{
 	float: none;
+	height: 100%;
 	width: 40%;
 }
 
