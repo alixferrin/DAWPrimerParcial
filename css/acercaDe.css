@@ -57,5 +57,9 @@ div#enlace-repositorio{
   	display: none;
   }
 
+  #categoria {
+  	width: 90%;
+  }
+
 }
 

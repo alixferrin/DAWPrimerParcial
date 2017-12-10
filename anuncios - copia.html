@@ -4,11 +4,12 @@
 		<title>FORUMPOL | "El foro mas cool de toda la ESPOL"</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="Hilo">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href= "css/estilo.css" />
-		<link rel="stylesheet" type="text/css" href="css/hilo.css">
+		<meta name="description" content="Anuncios de la ESPOL">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href= "css/estilo.css"/>	
+		<link rel="stylesheet" href= "css/anuncios.css"/>
 		<link href="espol.ico" rel = "shortcut icon"/>﻿
+		<script defer src="js/fontawesome-all.js"></script>
 	</head>
 	<body>
 		<div id="cabecera" class="col-12">
@@ -59,71 +60,54 @@
             </div><!--/.nav-collapse -->
           </div>
         </nav>
-		<!-- HILO -->
-		<div id="hilo" class="col-9">
-			<div id="op-post" class="container-fluid">
-				<h3 class="post-topic">Baile de gala<button class="btn btn-primary btn-xs pull-right resp-btn">RESPONDER</button></h3>
-				<div id="op">
-					<div class="poster">
-						<div class="poster-info">
-							<span class="glyphicon glyphicon-user"> alicsita</span>
-							<img src="img/alics.png">
-						</div>
-					</div>
-					<div class="post-area">
-						<p>no tengo pareja para el baile de gala :c</p>
-					</div>
+
+		<section>
+			<div id="categoria" class="col-9">
+				<div class="container anuncios">
+					<h2><b>ANUNCIOS</b></h2>
+					<ul class="list-group">
+						<a class="post" href="hilo.html">
+							<li class="list-group-item post-item">Baile de Gala
+								<span class="post-info pull-right fecha">9/12/2017</span>
+								<span class="post-info pull-right user">alicsita</span>
+								<span class="post-info pull-right replies"><i class="far fa-comment icon"></i>2</span>
+							</li>
+						</a>
+						<a class="post" href="hilo.html">
+							<li class="list-group-item post-item">Fiesta de FEPOL
+								<span class="post-info pull-right fecha">21/11/2017</span>
+								<span class="post-info pull-right user">OfficialFEPOL</span>
+								<span class="post-info pull-right replies"><i class="far fa-comment icon"></i>5</span>
+							</li>
+						</a>
+						<a class="post" href="hilo.html">
+							<li class="list-group-item post-item">Ayudantias FEPOL
+								<span class="post-info pull-right fecha">7/11/2017</span>
+								<span class="post-info pull-right user">OfficialFEPOL</span>
+								<span class="post-info pull-right replies"><i class="far fa-comment icon"></i>12</span>
+							</li>
+						</a>
+						<a class="post" href="hilo.html">
+							<li class="list-group-item post-item">Feria de emprendimiento
+								<span class="post-info pull-right fecha">12/11/2017</span>
+								<span class="post-info pull-right user">awesomejoe</span>
+								<span class="post-info pull-right replies"><i class="far fa-comment icon"></i>20</span>
+							</li>
+						</a>
+					</ul>
+					<nav id="paginas">
+						<ul class="pagination">
+							<li><a href="#" aria-label="Previous"><span>&laquo;</span></a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#" aria-label="Next"><span>&raquo;</span></a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<div class="container-fluid rep">
-				<div class="poster">
-					<div class="poster-info">
-						<span class="glyphicon glyphicon-user"> awesomejoe</span>
-						<img src="img/joe.jpg">
-					</div>
-				</div>
-				<div class="post-area">
-					<p>ps ke pena puerk :v</p>
-				</div>
-				<div class="post-num">
-					<p>#1</p>
-				</div>
-			</div>
-			<div class="container-fluid rep">
-				<div class="poster">
-					<div class="poster-info">
-						<span class="glyphicon glyphicon-user"> xXGeancaXx</span>
-						<img src="img/geanca.jpg">
-					</div>
-				</div>
-				<div class="post-area">
-					<p>ps ke pena puerk :v x2</p>
-				</div>
-				<div class="post-num">
-					<p>#2</p>
-				</div>
-			</div>
-		</div>
-		<div id="hilo-footer" class="col-9">
-			<div class="container-fluid rep-container">
-				<div id="resp-box" class="form-group">
-					<h3>Escribe tu respuesta: </h3>
-					<textarea class="form-control resp-text" rows="5"></textarea>
-					<button type="submit" class="btn btn-default btn-reply">Enviar</button>
-				</div>
-			</div>
-			<nav id="paginas">
-				<ul class="pagination">
-					<li><a href="#" aria-label="Previous"><span>&laquo;</span></a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#" aria-label="Next"><span>&raquo;</span></a></li>
-				</ul>
-			</nav>
-		</div>
+		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>	
-		<script src="js/resp.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -22,14 +22,13 @@
 	text-align: center;
 }
 
-.container {
+.anuncios {
 	width: 96.5%;
 	padding-top: 2em;
 }
 
 #categoria h2 {
   color: #001C43;
-
 }
 
 #categoria{
@@ -44,4 +43,14 @@ div.responsive-nav{
 
 #paginas {
 	text-align: right;
+}
+
+@media only screen and (max-width : 480px) {
+	.fecha, .user {
+		display: none;
+	}
+
+	#categoria {
+		width: 90%;
+	}
 }

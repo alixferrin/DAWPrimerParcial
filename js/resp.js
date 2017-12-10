@@ -1,6 +1,11 @@
+var num_posts
 
+window.onload = function(){
+	/* Cuenta cuantos posts hay en la página */
+	num_posts = $('.rep').length;
+}
 
-$(".resp-link").on("click", function(event) {
+$(".resp-btn").on("click", function(event) {
 	$("#resp-box").show();
 });
 
@@ -46,6 +51,15 @@ $(".btn-reply").on("click", function (event) {
 		
 		/* Agregando el post-area al container-fluid  */
 		$nuevaRespuesta.append($newPostArea);
+
+		/* Creando el conatiner para el numero */
+		num_posts++;
+		let $newNum = $("<div>");
+		$newNum.attr('class','post-num');
+		let $numText = $("<p>");
+		$numText.text("#" + num_posts);
+		$newNum.append($numText);
+		$nuevaRespuesta.append($newNum);
 
 		$("#hilo").append($nuevaRespuesta);
 
