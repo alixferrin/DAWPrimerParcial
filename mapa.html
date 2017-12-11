@@ -2,35 +2,20 @@
 <html>
   <head>
     <title>MAPA | "El foro mas cool de toda la ESPOL"</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href= "css/estilo.css" />
-    <link href="espol.ico" rel = "shortcut icon"/>﻿    
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-        width: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <link rel="stylesheet" href= "css/estilo.css">
+    <link rel="stylesheet" href= "css/mapa.css">
+    <link href="espol.ico" rel = "shortcut icon">﻿
   </head>
   <body>
     <div id="cabecera" class="col-12">
       <span class="logo col-1"><img class ="imagen" src="img/espol.png" alt="icono"></span>
       <h2 class = 'col-9'>FORUMPOL</h2>
       <div id="header-opts" class="col-2">
-        <div id="search" class="col-7">
-          <form action="" class="search-form">
+        <div id="buscar" class="col-7">
+          <form action="search" class="search-form">
               <div class="form-group has-feedback">
                   <label for="search" class="sr-only">buscar</label>
                   <input type="text" class="form-control" name="search" id="search" placeholder="Buscar...">
